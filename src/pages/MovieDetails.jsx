@@ -1,8 +1,8 @@
-import dotenv from 'dotenv'
-dotenv.config()
+
 import './MovieDetails.css'
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { API_KEY } from '../config/data';
 
 const MovieDetails = () => {
     const { id } = useParams(); 
@@ -13,7 +13,7 @@ const MovieDetails = () => {
     useEffect(() => {
         const fetchMovieDetails = async () => {
             try {
-                const response = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.API_KEY}&language=pt-BR`);
+                const response = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=pt-BR`);
                 if (!response.ok) {
                     throw new Error('Erro ao buscar detalhes do filme');
                 }
