@@ -1,0 +1,25 @@
+.movie-details {
+    padding: 20px;
+    text-align: center;
+    background-color: #121212; /* Fundo escuro */
+    color: #ffffff; /* Cor do texto */
+}
+
+.movie-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+}
+
+.movie-details h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #ffffff; /* Cor do título */
+}
+
+.movie-details p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #cccccc; /* Cor do texto */
+}
